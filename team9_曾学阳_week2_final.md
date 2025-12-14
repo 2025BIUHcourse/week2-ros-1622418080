@@ -103,7 +103,7 @@ g++ sum_cpp.cpp -o sum_cpp  # 编译代码
 
 编译运行截图：
 
-![C++ 编译与运行示例](screenshots/screenshot_18.png)
+![C++ 编译与运行示例](screenshots/screenshot_147.png)
 
 #### 3. VSCode 调试配置
 
