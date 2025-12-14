@@ -179,36 +179,36 @@ rosnode list
 
 查看 ROS 包路径：
 
-![截图 01：文件管理操作示例](screenshots/01_file_management.svg)
+```bash
 echo $ROS_PACKAGE_PATH
 ```
-![截图 02：安装 tree 工具示例](screenshots/02_install_tree.svg)
+
 验证效果截图：
 
-![截图 03：进程管理示例（ps / kill）](screenshots/03_process_management.svg)
+![截图 90：ROS 安装与 roscore 启动示例](screenshot/screenshot_21.png)
 
 ![截图 07：ROS 安装与 roscore 启动示例](screenshot/screenshot_04.png)
-![截图 05：C++ 编译与运行示例](screenshots/04_cpp_compile_run.svg)
+
 ### （四）任务4：CATKIN 工作空间与功能包
 
-![截图 06：VSCode 调试配置与运行示例](screenshots/05_vscode_debugging.svg)
+#### 1. 创建 Catkin 工作空间
 
 ```bash
-![截图 90：ROS 安装与 roscore 启动示例](screenshots/06_ros_install_roscore.svg)
+mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
-![截图 07：ROS 安装与 roscore 启动示例](screenshots/07_roscore_output.svg)
+catkin_make
 source devel/setup.bash
 ```
-![截图 08：Catkin 工作空间与 hello_ros 运行示例](screenshots/08_catkin_hello_ros.svg)
+
 #### 2. 创建功能包与 HelloWorld 节点
 
-![截图 09：Turtlesim 键盘控制示例](screenshots/09_turtlesim_keyboard.svg)
+```bash
 cd ~/catkin_ws/src
-![截图 10：双 Turtlesim ](screenshots/10_multi_turtle_rqt.svg)
+catkin_create_pkg beginner_tutorials roscpp rospy std_msgs
 ```
-![截图 11： rqt ](screenshots/11_rqt_visualization.svg)
-![截图 12： plot](screenshots/12_plot.svg)
-![截图 13： plot](screenshots/13_plot.svg)
+
+示例 Python 节点 `hello_ros.py`（放在 `beginner_tutorials/scripts`）：
+
 ```python
 #!/usr/bin/env python3
 import rospy

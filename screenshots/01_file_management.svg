@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360">
-  <rect width="100%" height="100%" fill="#f0f0f0" />
-  <rect x="10" y="10" width="880" height="340" fill="#ffffff" stroke="#cccccc" />
-  <text x="50%" y="40%" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#333" text-anchor="middle">Placeholder image</text>
-  <text x="50%" y="60%" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666" text-anchor="middle">01_file_management — 文件管理操作示例</text>
-</svg>
